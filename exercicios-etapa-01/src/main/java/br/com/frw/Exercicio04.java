@@ -1,6 +1,8 @@
+package br.com.frw;
+
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio04 {
 
     public static void main(String[] args) {
 
@@ -49,5 +51,5 @@ public class Exercicio4 {
             System.out.println("Status: Reprovado");
         }
 
-       }
     }
+}
