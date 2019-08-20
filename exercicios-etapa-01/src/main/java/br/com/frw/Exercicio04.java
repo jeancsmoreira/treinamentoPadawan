@@ -50,6 +50,5 @@ public class Exercicio04 {
         } else {
             System.out.println("Status: Reprovado");
         }
-
     }
 }
