@@ -48,7 +48,7 @@ public class Exercicio04 {
                 System.out.println("Status: Aprovado");
                 aprovados = ++aprovados;
             } else if (tot_notas >= 50 && tot_notas < 59) {
-                System.out.println("Status: Recuperação Prova I");
+                System.out.println("Status: Recuperação Prova  I");
                 recuperacao = ++recuperacao;
             } else if (tot_notas >= 40 && tot_notas < 49) {
                 System.out.println("Status: Recuperação - Prova II");
@@ -80,6 +80,8 @@ public class Exercicio04 {
         System.out.println("Quantidade de alunos Aprovados: " + aprovados); // Lista na tela todos os aprovados.
         System.out.println("Quantidade de alunos em Recuperação: " + recuperacao);
         System.out.println("Quantidade de alunos Reprovados: " + reprovados);
+
+
 
     }
 
