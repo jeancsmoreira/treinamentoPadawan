@@ -2,17 +2,22 @@ package br.com.frw;
 
 import java.util.Scanner;
 
+//Junto ao resumo do exercício anterior, aponte quem foi o destaque da turma (aluno com melhor total geral),
+//        quem foi o destaque em sala de aula (aluno com melhor nota em exercícios em sala),
+//        e a relação de nomes e notas de alunos reprovados.
+
 public class Exercicio04 {
 
     public static void main(String[] args) {
 
-        int y = 0; //Só uma variavel qualquer pra entrar na estrutura de repetição. Recebe Zero.
+        int y = 1; //Só uma variavel qualquer pra entrar na estrutura de repetição. Recebe Zero.
         int aprovados = 0; //Cria uma varivável com valor atribuido a ela zero
         int recuperacao = 0;
         int reprovados = 0;
 
 
-        while (y == 0) { //Compara a variavel com o Zero e entra na estrutira de repetição.
+
+        while (y != 0) { //Compara a variavel com o Zero e entra na estrutira de repetição.
             Scanner leitor = new Scanner(System.in);
 
             System.out.println("Bom dia Aluno, favor informar seu Nome: ");
@@ -33,13 +38,14 @@ public class Exercicio04 {
             System.out.println("Informe sua Terceira nota de prova do Semestre:");
             Float notaProva3 = leitor.nextFloat();
 
-            Float soma_das_notas_Prova = notaProva1 + notaProva2 + notaProva3 * 2;
+            Float soma_das_notas_Prova = notaProva1 + notaProva2 + (notaProva3 * 2);
             Float tot_notas = soma_das_notas_Prova + notas_exercicios;
 
             if (tot_notas > 100) {
                 tot_notas = 100F; // Usar o F no final do número quando a variavel for do tipo Flout.
                 System.out.println();
             }
+
 
             if (tot_notas > 100) {
                 aprovados = ++aprovados; //Pega a variavel criada e vai incrementando a ela a cada cadastro aprovado.
@@ -72,8 +78,9 @@ public class Exercicio04 {
 
 
             if (OpcaoDigitada != 1) { //Compara a opçao digitada se for 2 finaliza, se for 1, volta ao cadastro.
-                y = 1;
-
+                y = 0;
+            }else{
+                y++;
             }
         }
 
