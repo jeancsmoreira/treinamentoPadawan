@@ -80,9 +80,6 @@ public class Exercicio04 {
         System.out.println("Quantidade de alunos Aprovados: " + aprovados); // Lista na tela todos os aprovados.
         System.out.println("Quantidade de alunos em Recuperação: " + recuperacao);
         System.out.println("Quantidade de alunos Reprovados: " + reprovados);
-
-
-
     }
 
 }
