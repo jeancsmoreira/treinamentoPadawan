@@ -15,7 +15,6 @@ public class Exercicio04 {
         String melhorAlunoNota = " ";
         String melhorAlunoExercicio = " ";
 
-
         while (y != 0) { //Compara a variavel com o Zero e entra na estrutira de repetição.
             Scanner leitor = new Scanner(System.in);
 
