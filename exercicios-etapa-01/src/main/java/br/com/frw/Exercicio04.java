@@ -14,7 +14,10 @@ public class Exercicio04 {
         int aprovados = 0; //Cria uma varivável com valor atribuido a ela zero
         int recuperacao = 0;
         int reprovados = 0;
-
+        Float maiorNota = 0f;
+        Float maiorExercicio = 0f;
+        String melhorAlunoNota = " ";
+        String melhorAlunoExercicio = " ";
 
 
         while (y != 0) { //Compara a variavel com o Zero e entra na estrutira de repetição.
@@ -28,6 +31,11 @@ public class Exercicio04 {
 
             System.out.println("Informe o total de pontos obtidos com Exercícios no Semestre: ");
             Float notas_exercicios = leitor.nextFloat();
+
+            if(notas_exercicios > maiorExercicio){
+                maiorExercicio = notas_exercicios;
+                melhorAlunoExercicio = nome;
+            }
 
             System.out.println("Informe sua Primeira nota de prova no Semestre:");
             Float notaProva1 = leitor.nextFloat();
@@ -46,6 +54,10 @@ public class Exercicio04 {
                 System.out.println();
             }
 
+            if(tot_notas > maiorNota){
+                maiorNota = tot_notas;
+                melhorAlunoNota = nome;
+            }
 
             if (tot_notas > 100) {
                 aprovados = ++aprovados; //Pega a variavel criada e vai incrementando a ela a cada cadastro aprovado.
@@ -87,6 +99,10 @@ public class Exercicio04 {
         System.out.println("Quantidade de alunos Aprovados: " + aprovados); // Lista na tela todos os aprovados.
         System.out.println("Quantidade de alunos em Recuperação: " + recuperacao);
         System.out.println("Quantidade de alunos Reprovados: " + reprovados);
+
+        System.out.println("O aluno com maior com nota foi: " +melhorAlunoNota);
+        System.out.println("O aluno com maior nota de exercício foi: " +melhorAlunoExercicio);
+
     }
 
 }
