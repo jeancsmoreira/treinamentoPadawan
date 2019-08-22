@@ -2,10 +2,6 @@ package br.com.frw;
 
 import java.util.Scanner;
 
-//Junto ao resumo do exercício anterior, aponte quem foi o destaque da turma (aluno com melhor total geral),
-//        quem foi o destaque em sala de aula (aluno com melhor nota em exercícios em sala),
-//        e a relação de nomes e notas de alunos reprovados.
-
 public class Exercicio04 {
 
     public static void main(String[] args) {
@@ -32,7 +28,7 @@ public class Exercicio04 {
             System.out.println("Informe o total de pontos obtidos com Exercícios no Semestre: ");
             Float notas_exercicios = leitor.nextFloat();
 
-            if(notas_exercicios > maiorExercicio){
+            if (notas_exercicios > maiorExercicio) {
                 maiorExercicio = notas_exercicios;
                 melhorAlunoExercicio = nome;
             }
@@ -54,7 +50,7 @@ public class Exercicio04 {
                 System.out.println();
             }
 
-            if(tot_notas > maiorNota){
+            if (tot_notas > maiorNota) {
                 maiorNota = tot_notas;
                 melhorAlunoNota = nome;
             }
@@ -91,7 +87,7 @@ public class Exercicio04 {
 
             if (OpcaoDigitada != 1) { //Compara a opçao digitada se for 2 finaliza, se for 1, volta ao cadastro.
                 y = 0;
-            }else{
+            } else {
                 y++;
             }
         }
@@ -100,8 +96,8 @@ public class Exercicio04 {
         System.out.println("Quantidade de alunos em Recuperação: " + recuperacao);
         System.out.println("Quantidade de alunos Reprovados: " + reprovados);
 
-        System.out.println("O aluno com maior com nota foi: " +melhorAlunoNota);
-        System.out.println("O aluno com maior nota de exercício foi: " +melhorAlunoExercicio);
+        System.out.println("O aluno com maior com nota foi: " + melhorAlunoNota);
+        System.out.println("O aluno com maior nota de exercício foi: " + melhorAlunoExercicio);
 
     }
 
