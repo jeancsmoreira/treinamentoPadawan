@@ -33,9 +33,9 @@ public class Principal {
 
         if (opcao == 1) {
             System.out.println("Informe o nome do Produto: ");
-            String nomeProduto = scanner.nextLine();                     //Recebe os dados do teclado
-            Produto produto = new Produto();                             //
-            produto.setNomeProduto(nomeProduto);
+            String nomeProduto = scanner.nextLine();    //Recebe os dados do teclado
+            Produto produto = new Produto();
+            listaProdutos.add(Produto);
             produto.setNumeroIten(contadorNumeroPrduto);
             contadorNumeroPrduto = contadorNumeroPrduto + 1;
         }
